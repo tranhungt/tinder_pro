@@ -56,6 +56,7 @@ Likes a user, equivalent of swiping right.
 
 
 `.dislike(user_id, callback)`
+
 Passes on the user.
 
 ###Updating preferences
