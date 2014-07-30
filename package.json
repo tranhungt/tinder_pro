@@ -1,0 +1,22 @@
+{
+  "author": "Hung Tran",
+  "name": "tinder_pro",
+  "description": "API Wrapper for Tinder app",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tranhungt/tinder_pro.git"
+  },
+  "keywords": ["tinder", "api", "wrapper", "tinderjs", "bot", "tinderbot"],
+  "main": "./lib/client.js",
+  "dependencies": {
+    "request": "2.36.0",
+    "jsesc": "0.4.3",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
