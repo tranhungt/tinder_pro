@@ -18,11 +18,13 @@ In order to use the API, you will need the facebook oauth token. To get the face
 
 After setting up the proxy, initiate the tinder app on your phone, and you will see the http request to `https://api.gotinder.com/auth`. Check the request json body, and you will see something like
 
-```{
+```javascript
+{
   "facebook_token": "CAAGm0PX4ZCps............",
 
   "facebook_id": "761..."
-}```
+}
+```
 
 Usage
 -----
@@ -30,14 +32,16 @@ Usage
 ###Authenticating
 With the facebook auth token, you can plug it into the app's auth.
 
-```var FACEBOOK_ID = "761..."
+```javascript
+var FACEBOOK_ID = "761..."
 
 var FACEBOOK_TOKEN = "BAAGm0PX4ZCps............"
 
 var TinderPro = require('../tinder_pro')
 var tinder = new TinderPro()
 
-tinder.sign_in(FACEBOOK_ID, FACEBOOK_TOKEN, function(err, res, body){})```
+tinder.sign_in(FACEBOOK_ID, FACEBOOK_TOKEN, function(err, res, body){})
+```
 
 Every function is an asynchronous request to Tinder's API, therefore takes a callback with the params `callback(err, res, body)` that reflects the API's response.
 
