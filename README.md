@@ -14,7 +14,8 @@ via `git`
 
 Getting the Facebook OAUTH Tokens
 ---------------------------------
-In order to use the API, you will need the facebook oauth token. To get the facebook oauth token, it's best to use a proxy service such as [Charles Proxy](http://www.charlesproxy.com/). Setting up SSL proxying on Charles, you will be able to see all https requests coming in and out of Tinder.
+In order to use the API, you will need the facebook oauth token. To get the facebook oauth token, it's best to use a proxy service such as [Charles Proxy](http://www.charlesproxy.com/). You can set up Charles Proxy by following a simple walkthrough here:
+[http://hungtran.co/discovering-tinders-private-api/](http://hungtran.co/discovering-tinders-private-api/)
 
 After setting up the proxy, initiate the tinder app on your phone, and you will see the http request to `https://api.gotinder.com/auth`. Check the request json body, and you will see something like
 
