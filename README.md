@@ -39,7 +39,7 @@ var FACEBOOK_ID = "761..."
 
 var FACEBOOK_TOKEN = "BAAGm0PX4ZCps............"
 
-var TinderPro = require('../tinder_pro')
+var TinderPro = require('tinder_pro')
 var tinder = new TinderPro()
 
 tinder.sign_in(FACEBOOK_ID, FACEBOOK_TOKEN, function(err, res, body){})
