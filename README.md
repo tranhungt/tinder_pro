@@ -61,6 +61,12 @@ Likes a user, equivalent of swiping right.
 
 Passes on the user.
 
+`.send_message(user_id, message, callback)`
+
+Sends a message to the user. You can only do this to users whom you've been matched with.
+Generally used after you call `.like` and the response body.match is true.
+
+
 ###Updating preferences
 `.update_search_distance(distance, callback)`
 
