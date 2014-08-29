@@ -6,11 +6,15 @@ Installation
 ------------
 via `npm`
 
-`npm install tinder_pro`
+```
+npm install tinder_pro
+```
 
 via `git`
 
-`git clone https://github.com/tranhungt/tinder_pro.git`
+```
+git clone https://github.com/tranhungt/tinder_pro.git
+```
 
 Getting the Facebook OAUTH Tokens
 ---------------------------------
@@ -48,31 +52,48 @@ tinder.sign_in(FACEBOOK_ID, FACEBOOK_TOKEN, function(err, res, body){})
 Every function is an asynchronous request to Tinder's API, therefore takes a callback with the params `callback(err, res, body)` that reflects the API's response.
 
 ###Interacting with Users
-`.get_nearby_users(callback)`
+````
+.get_nearby_users(callback)
+```
 
 Returns an array of json user objects.
 
-`.like(user_id, callback)`
+```
+.like(user_id, callback)
+```
 
 Likes a user, equivalent of swiping right.
 
 
-`.dislike(user_id, callback)`
+```
+.dislike(user_id, callback)
+```
 
 Passes on the user.
 
-`.send_message(user_id, message, callback)`
+```
+.send_message(user_id, message, callback)
+```
 
 Sends a message to the user. You can only do this to users whom you've been matched with.
 Generally used after you call `.like` and the response body.match is true.
 
+```
+.fetch_updates(callback)
+```
+Gets updates from your last visit, ie. messages, likes, blocks.
+
 
 ###Updating preferences
-`.update_search_distance(distance, callback)`
+```
+.update_search_distance(distance, callback)
+```
 
 Takes an integer distance in miles and updates your search distance preference.
 
-`.update_location(latitude, longitude, callback)`
+```
+.update_location(latitude, longitude, callback)
+```
 
 Updates your current position. Latitude and longitude are float precision.
 
